@@ -15,7 +15,9 @@ namespace LinkedListDemo
             list.Insert(3, 44);
             list.Insert(7, 250);
             list.Display();
-            list.DeleteFirstElement();
+            list.Pop();
+            list.Display();
+            list.PopLast();
             list.Display();
         }
     }

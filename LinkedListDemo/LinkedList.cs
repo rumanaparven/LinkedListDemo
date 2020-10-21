@@ -76,11 +76,23 @@ namespace LinkedListDemo
 
 
         }
-        internal void DeleteFirstElement()
+        internal void Pop()
         {
             if (head != null)
             {
                 head = head.next;
+            }
+        }
+        internal void PopLast()
+        {
+            Node temp = head;
+            while (temp!= null)
+            {
+                if (temp.next.next == null)
+                {
+                    temp.next = null;
+                }
+                temp = temp.next;
             }
         }
     }
