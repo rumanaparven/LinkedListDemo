@@ -76,5 +76,12 @@ namespace LinkedListDemo
 
 
         }
+        internal void DeleteFirstElement()
+        {
+            if (head != null)
+            {
+                head = head.next;
+            }
+        }
     }
 }
