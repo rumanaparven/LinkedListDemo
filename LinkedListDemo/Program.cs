@@ -6,9 +6,10 @@ namespace LinkedListDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to linked list implementation");
-             
-            
+            LinkedList list = new LinkedList();
+            list.Add(23);
+            list.Add(35);
+            list.Add(56);
         }
     }
 }
