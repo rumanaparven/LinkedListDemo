@@ -12,6 +12,9 @@ namespace LinkedListDemo
             list.Add(56);
             list.Add(75);
             list.Add(111);
+            list.Insert(3, 44);
+            list.Insert(7, 250);
+            list.Display();
         }
     }
 }

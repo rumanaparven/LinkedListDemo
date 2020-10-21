@@ -25,5 +25,56 @@ namespace LinkedListDemo
             }
             Console.WriteLine(node.data + " is inserted into the linked list");
         }
+        internal void Insert(int position,int data)
+        {
+            Node node = new Node(data);
+            if (position == 1)
+            {
+                node.next = head;
+                head = node;
+            }
+            else
+            {
+                int index = 2;
+                Node temp = head;
+                while (index != position + 1 || temp != null) 
+                {
+                    if (index == position)
+                    {
+                        Node n = temp.next;
+                        temp.next = node;
+                        node.next = n;
+                        
+                        break;
+                    }
+                    temp = temp.next;
+                    index++;
+                }
+                if (index + 1 == position)
+                {
+                    temp.next = node;
+                }
+               
+            }
+        }
+
+        internal void Display()
+        {
+            Node temp = head;
+            if (temp == null)
+            {
+                Console.WriteLine("List is empty");
+            }
+            else
+            {
+                while (temp != null)
+                {
+                    Console.WriteLine(temp.data);
+                    temp = temp.next;
+                }
+            }
+
+
+        }
     }
 }
