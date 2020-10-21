@@ -10,6 +10,7 @@ namespace LinkedListDemo
             list.Add(23);
             list.Add(35);
             list.Add(56);
+            list.Add(75);
         }
     }
 }
